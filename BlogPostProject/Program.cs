@@ -67,6 +67,7 @@ namespace BlogPostProject
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder
             .LogTo(Console.WriteLine, LogLevel.Information)
             .EnableSensitiveDataLogging()
+
             .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Blogs");
     }
 }
